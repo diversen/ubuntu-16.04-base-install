@@ -42,6 +42,7 @@ rm composer.phar
 git_setup(){
 git config --global user.email "dennis.iversen@gmail.com"
 git config --global user.name "Dennis Iversen"
+git config --global push.default matching
 }
 
 git_setup
