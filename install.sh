@@ -19,7 +19,6 @@ wget \
 curl \
 lynx \
 pandoc \
-texlive-full \
 rsync \
 git \
 build-essential
@@ -45,26 +44,28 @@ git config --global user.name "Dennis Iversen"
 git config --global push.default matching
 }
 
+# Base setup
+install_base
+
 git_setup
 
+# Nodejs
 if (which nodejs); then
 	echo "Nodejs exists. Skipping install";
 else
 	install_nodejs
 fi
 
+# Composer
 if (which composer); then
 	echo "php Composer exists. Skipping install";
 else
 	install_composer
 fi
 
-exit;
 
 
 # Build
-
-
 
 FILE=/usr/local/bin/composer
 
