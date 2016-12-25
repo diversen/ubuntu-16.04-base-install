@@ -27,7 +27,7 @@ build-essential
 
 # Nodejs
 install_nodejs(){
-curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
+curl -sL https://deb.nodesource.com/setup_7.x | sudo -E bash -
 sudo apt-get install -y nodejs
 }
 
@@ -46,7 +46,6 @@ git config --global push.default matching
 }
 
 git_setup
-exit;
 
 if (which nodejs); then
 	echo "Nodejs exists. Skipping install";
@@ -77,4 +76,4 @@ else
 
 fi
 
-
+cp bash_rc ~/.bash_rc
