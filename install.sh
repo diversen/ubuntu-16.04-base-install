@@ -46,7 +46,10 @@ git_setup(){
 git config --global user.email "dennis.iversen@gmail.com"
 git config --global user.name "Dennis Iversen"
 git config --global push.default matching
+git config --global credential.helper "cache --timeout=3600"
 }
+
+
 
 # Base setup
 install_base
