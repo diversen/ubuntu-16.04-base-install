@@ -80,7 +80,7 @@ else
 
 fi
 
-cp bash_rc ~/.bash_rc
+cp bashrc ~/.bashrc
 
 sudo a2enmod rewrite
 sudo service apache2 restart
