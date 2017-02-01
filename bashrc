@@ -116,5 +116,8 @@ if ! shopt -oq posix; then
   fi
 fi
 
+PATH=$PATH:~/bin
+export PATH
+
 export VISUAL=vim
 export EDITOR="$VISUAL"
