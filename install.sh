@@ -14,6 +14,9 @@ php7.0-mbstring \
 php7.0-pdo \
 php7.0-mysql \
 php7.0-mcrypt \
+php7.0-zip \
+php7.0-xml \
+php7.0-sqlite3 \
 sqlite3 \
 wget \
 curl \
@@ -78,3 +81,6 @@ else
 fi
 
 cp bash_rc ~/.bash_rc
+
+sudo a2enmod rewrite
+sudo service apache2 restart
