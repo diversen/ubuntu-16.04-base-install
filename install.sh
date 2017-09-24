@@ -1,5 +1,8 @@
 #!/bin/sh
 
+mkdir -p bin
+echo 'PATH=$PATH:~/bin' >> .bashrc
+
 # My base debian
 install_base() {
 sudo apt-get install aptitude
@@ -83,9 +86,6 @@ else
    echo "Installing composer"
 
 fi
-
-cp bashrc ~/.bashrc
-mkdir -p ~/bin
 
 sudo a2enmod rewrite
 sudo service apache2 restart
