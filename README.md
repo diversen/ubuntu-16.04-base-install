@@ -1,3 +1,9 @@
+# Note
+
+Use this instead: https://github.com/diversen/ubuntu-base-install
+
+This supports both 16.04 and 18.04 and maybe future Ubutunut LTS releases
+
 # ubuntu-16.04-base-install
 
 Bash script where I try to remember my base install of ubuntu-16.04. 
